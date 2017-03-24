@@ -232,5 +232,6 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
     height: 25px;
+    max-width: 120px;
 }
 
