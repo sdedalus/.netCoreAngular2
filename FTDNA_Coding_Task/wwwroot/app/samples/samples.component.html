@@ -1,0 +1,88 @@
+<br />
+
+<h1>Samples</h1>
+<br /><br />
+
+<!-- Added navbar to switch between list view shown in video and new edit view -->
+<div class="navbar">
+    <ul class="nav navbar-nav">
+        <li class="toolbar-item">
+            <a (click)="editViewEnabled=false" [class.active]="!editViewEnabled">
+                <span class="glyphicon glyphicon-align-justify"></span> List View
+            </a>
+        </li>
+        <li class="toolbar-item">
+            <a (click)="editViewEnabled=true" [class.active]="editViewEnabled">
+                <span class="glyphicon glyphicon-pencil"></span> Edit View
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="pannel-body"  [hidden]="!editViewEnabled">
+    <div><b>Bar Code :</b> <input type="text" #barCodeCreate (blur)="newSample.Barcode = barCodeCreate.value;" class="filter-term" /></div>
+    <div >
+        <b>Created By :</b>
+        <select [(ngModel)]="newSample.CreatedBy" class="filter-term" >
+            <option *ngFor="let user of users()" [value]="user.id">
+                {{user.userName}}
+            </option>
+        </select>
+    </div>
+     <div>
+         <b>Status :</b>
+         <select name="theme" [(ngModel)]="newSample.StatusId" class="filter-term">
+             <option *ngFor="let status of statuses()" [value]="status.id">
+                 {{status.status}}
+             </option>
+         </select>
+     </div>
+    <div class="filter-term"><button (click)="createSample()" class="filter-label">Create</button></div>
+</div>
+
+<div class="navbar"  [hidden]="editViewEnabled">
+    <ul class="nav navbar-nav">
+        <li class="toolbar-item">
+            <div class="filter-term"><label class="filter-label"> Sample ID </label><input type="number" #sampleId (blur)="SampleId = sampleId.value;" class="filter-term" /></div>
+        </li>
+        <li class="toolbar-item">
+            <div class="filter-term"><label class="filter-label"> Bar Code </label><input type="text" #barCode (blur)="Barcode = barCode.value;" class="filter-term" /></div>
+        </li>
+        <li class="toolbar-item">
+            <div class="filter-term">
+                <label class="filter-label"> Status </label>
+                <select name="theme" [(ngModel)]="StatusId" class="filter-term">
+                    <option *ngFor="let status of statuses()" [value]="status.id">
+                        {{status.status}}
+                    </option>
+                </select>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <div class="filter-term">
+                <label class="filter-label"> User </label>
+                <select name="theme" [(ngModel)]="CreatedBy" class="filter-term">
+                    <option *ngFor="let user of users()" [value]="user.id">
+                        {{user.userName}}
+                    </option>
+                </select>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <div class="filter-term"><button (click)="seatch()" class="filter-label">Search</button></div>
+        </li>
+    </ul>
+</div>
+
+<div  [hidden]="editViewEnabled">
+    <div *ngFor="let sample of samples; let i = index" class="panel panel-default">
+        <div class="pannel-heading"><b>Bar Code : </b>{{sample.barcode}}</div>
+        <div class="pannel-body">
+            <div><b>ID :</b> {{ sample.sampleId }}</div>
+            <div><b>DateCreated :</b> {{ sample.createdAt }}</div>
+            <div><b>Created By :</b> {{ sample.firstName + '  ' + sample.lastName }} </div>
+            <div><b>Status :</b> {{ sample.status }}</div>
+            <div></div>
+        </div> 
+    </div>  
+</div>

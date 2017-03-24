@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <PreBuildEvent></PreBuildEvent>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\node_modules\**" />
+    <Compile Remove="wwwroot\public\**" />
+    <Compile Remove="wwwroot\templates\**" />
+    <Content Remove="wwwroot\node_modules\**" />
+    <Content Remove="wwwroot\public\**" />
+    <Content Remove="wwwroot\templates\**" />
+    <EmbeddedResource Remove="wwwroot\node_modules\**" />
+    <EmbeddedResource Remove="wwwroot\public\**" />
+    <EmbeddedResource Remove="wwwroot\templates\**" />
+    <None Remove="wwwroot\node_modules\**" />
+    <None Remove="wwwroot\public\**" />
+    <None Remove="wwwroot\templates\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot/app\app.component.js" />
+    <Content Remove="wwwroot/app\app.component.js.map" />
+    <Content Remove="wwwroot/app\app.module.js" />
+    <Content Remove="wwwroot/app\app.module.js.map" />
+    <Content Remove="wwwroot/app\shared\interfaces.js" />
+    <Content Remove="wwwroot/app\shared\interfaces.js.map" />
+    <Content Remove="wwwroot/npm-debug.log" />
+    <Content Remove="wwwroot/public\src\index.js" />
+    <Content Remove="wwwroot/public\src\index.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\FTDNA.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="FTDNA.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\app\samples\samples.component.html" />
+    <Content Include="wwwroot\app\samples\samples.component.ts" />
+    <Content Include="wwwroot\app\shared\interfaces.ts" />
+    <Content Include="wwwroot\app\shared\services\data.service.ts" />
+    <Content Include="wwwroot\app\shared\ValuesPipe.ts" />
+    <Content Include="wwwroot\package.json" />
+    <Content Include="wwwroot\routes\api.js" />
+    <Content Include="wwwroot\routes\index.js" />
+    <Content Include="wwwroot\styles\styles.css" />
+    <Content Include="wwwroot\systemjs.config.js" />
+    <Content Include="wwwroot\tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Data\FTDNA.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FTDNA.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot/app\samples\samplesView.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/images\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\wwwroot\images\logo.png
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\FTDNA.db
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\CodeingTaskTests.deps.json
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\CodeingTaskTests.runtimeconfig.json
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\CodeingTaskTests.runtimeconfig.dev.json
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\CodeingTaskTests.dll
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\CodeingTaskTests.pdb
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\FTDNA_Coding_Task.dll
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\bin\Debug\netcoreapp1.1\FTDNA_Coding_Task.pdb
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\obj\Debug\netcoreapp1.1\CodeingTaskTests.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\obj\Debug\netcoreapp1.1\CodeingTaskTests.AssemblyInfo.cs
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\obj\Debug\netcoreapp1.1\CodeingTaskTests.dll
+C:\Users\David\Source\Repos\FTDNA_Coding_Task\CodeingTaskTests\obj\Debug\netcoreapp1.1\CodeingTaskTests.pdb
