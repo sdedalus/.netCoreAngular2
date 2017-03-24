@@ -68,6 +68,11 @@
                 </select>
             </div>
         </li>
+
+        <li class="toolbar-item">
+            <div class="filter-term"><label class="filter-label"> Name Contains </label><input type="text" #nameContains (blur)="NameContains = nameContains.value;" class="filter-term" /></div>
+        </li>
+
         <li class="toolbar-item">
             <div class="filter-term"><button (click)="seatch()" class="filter-label">Search</button></div>
         </li>

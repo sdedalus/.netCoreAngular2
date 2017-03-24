@@ -18,6 +18,7 @@ export class SamplesComponent implements OnInit {
     public CreatedBy: string = "";
     public SampleId: string = "";
     public StatusId: string = "";
+    public NameContains: string = "";
 
     public samples: ISample[] = [];
     public users:() => IUser[] = () => [];
@@ -47,7 +48,7 @@ export class SamplesComponent implements OnInit {
     }
 
     seatch() {
-        this.dataService.getSamples(this.SampleId, this.Barcode, this.CreatedAt, this.CreatedBy, this.StatusId)
+        this.dataService.getSamples(this.SampleId, this.Barcode, this.CreatedAt, this.CreatedBy, this.StatusId, this.NameContains)
             .subscribe((data: ISample[]) => this.samples = data);
     }
 

@@ -14,14 +14,14 @@ export class DataService {
     // that bootstrap step was skipped in this task in the interest of time 
     // but would be usefull in a public api to facilitate api versioning 
     // and reduce resource / identifier coupling.
-    private samples: string = 'api/samples?{id}{barcode}{createdAt}{createdBy}{statusId}';
+    private samples: string = 'api/samples?{id}{barcode}{createdAt}{createdBy}{statusId}{nameContains}';
     private sample: string = 'api/samples';
     private users: string = 'api/users';
     private statuses: string = 'api/statuses';
     
     constructor(private http: Http) { }
 
-    getSamples(id: string, barcode: string, createdat: string, createdby: string, statusid: string): Observable<ISample[]> {
+    getSamples(id: string, barcode: string, createdat: string, createdby: string, statusid: string, nameContains: string): Observable<ISample[]> {
 
         var query: string;
         query = this.setOptionalQueryPart(this.samples, "id", id);
@@ -29,6 +29,7 @@ export class DataService {
         query = this.setOptionalQueryPart(query, "createdAt", createdat);
         query = this.setOptionalQueryPart(query, "createdBy", createdby);
         query = this.setOptionalQueryPart(query, "statusId", statusid);
+        query = this.setOptionalQueryPart(query, "nameContains", nameContains);
         if (query.endsWith("&")){
             query = query.substring(0, query.length - 1);
         }

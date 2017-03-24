@@ -20,6 +20,7 @@ var SamplesComponent = (function () {
         this.CreatedBy = "";
         this.SampleId = "";
         this.StatusId = "";
+        this.NameContains = "";
         this.samples = [];
         this.users = function () { return []; };
         this.statuses = function () { return []; };
@@ -38,7 +39,7 @@ var SamplesComponent = (function () {
     };
     SamplesComponent.prototype.seatch = function () {
         var _this = this;
-        this.dataService.getSamples(this.SampleId, this.Barcode, this.CreatedAt, this.CreatedBy, this.StatusId)
+        this.dataService.getSamples(this.SampleId, this.Barcode, this.CreatedAt, this.CreatedBy, this.StatusId, this.NameContains)
             .subscribe(function (data) { return _this.samples = data; });
     };
     SamplesComponent.prototype.createSample = function () {

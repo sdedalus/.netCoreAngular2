@@ -20,18 +20,19 @@ var DataService = (function () {
         // that bootstrap step was skipped in this task in the interest of time 
         // but would be usefull in a public api to facilitate api versioning 
         // and reduce resource / identifier coupling.
-        this.samples = 'api/samples?{id}{barcode}{createdAt}{createdBy}{statusId}';
+        this.samples = 'api/samples?{id}{barcode}{createdAt}{createdBy}{statusId}{nameContains}';
         this.sample = 'api/samples';
         this.users = 'api/users';
         this.statuses = 'api/statuses';
     }
-    DataService.prototype.getSamples = function (id, barcode, createdat, createdby, statusid) {
+    DataService.prototype.getSamples = function (id, barcode, createdat, createdby, statusid, nameContains) {
         var query;
         query = this.setOptionalQueryPart(this.samples, "id", id);
         query = this.setOptionalQueryPart(query, "barcode", barcode);
         query = this.setOptionalQueryPart(query, "createdAt", createdat);
         query = this.setOptionalQueryPart(query, "createdBy", createdby);
         query = this.setOptionalQueryPart(query, "statusId", statusid);
+        query = this.setOptionalQueryPart(query, "nameContains", nameContains);
         if (query.endsWith("&")) {
             query = query.substring(0, query.length - 1);
         }

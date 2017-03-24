@@ -1,0 +1,11 @@
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\bin\Debug\netcoreapp1.0\wwwroot\images\logo.png
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\bin\Debug\netcoreapp1.0\FTDNA.db
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\bin\Debug\netcoreapp1.0\FTDNA.deps.json
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\bin\Debug\netcoreapp1.0\FTDNA.runtimeconfig.json
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\bin\Debug\netcoreapp1.0\FTDNA.runtimeconfig.dev.json
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\bin\Debug\netcoreapp1.0\FTDNA.dll
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\bin\Debug\netcoreapp1.0\FTDNA.pdb
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\obj\Debug\netcoreapp1.0\FTDNA.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\obj\Debug\netcoreapp1.0\FTDNA.AssemblyInfo.cs
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\obj\Debug\netcoreapp1.0\FTDNA.dll
+C:\Users\David\Source\Repos\.netCoreAngular2\FTDNA_Coding_Task\obj\Debug\netcoreapp1.0\FTDNA.pdb

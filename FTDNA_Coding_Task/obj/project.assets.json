@@ -10026,9 +10026,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David\\Source\\Repos\\.netCoreAngular2\\FTDNA_Coding_Task\\FTDNA_Coding_Task.csproj",
-      "projectName": "FTDNA_Coding_Task",
-      "projectPath": "C:\\Users\\David\\Source\\Repos\\.netCoreAngular2\\FTDNA_Coding_Task\\FTDNA_Coding_Task.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Source\\Repos\\.netCoreAngular2\\FTDNA_Coding_Task\\FTDNA.csproj",
+      "projectName": "FTDNA",
+      "projectPath": "C:\\Users\\David\\Source\\Repos\\.netCoreAngular2\\FTDNA_Coding_Task\\FTDNA.csproj",
       "outputPath": "C:\\Users\\David\\Source\\Repos\\.netCoreAngular2\\FTDNA_Coding_Task\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTDNA_Coding_Task", "FTDNA_Coding_Task\FTDNA_Coding_Task.csproj", "{CFE3005C-6768-463F-8489-6BBED5346531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTDNA", "FTDNA_Coding_Task\FTDNA.csproj", "{CFE3005C-6768-463F-8489-6BBED5346531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeingTaskTests", "CodeingTaskTests\CodeingTaskTests.csproj", "{6BFB459F-3DDF-421E-920D-6999B32BF698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "CodeingTaskTests\Tests.csproj", "{6BFB459F-3DDF-421E-920D-6999B32BF698}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

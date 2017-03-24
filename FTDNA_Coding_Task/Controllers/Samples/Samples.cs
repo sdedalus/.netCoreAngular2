@@ -20,7 +20,7 @@ namespace FTDNA_Coding_Task.Controllers.Samples
 
 		// GET: api/Samples
 		[HttpGet]
-        public IEnumerable<SampleResponse> Get(int? id = null, string barcode = null, DateTime? createdAt = null, int? createdBy = null, int? statusId = null)
+        public IEnumerable<SampleResponse> Get(int? id = null, string barcode = null, DateTime? createdAt = null, int? createdBy = null, int? statusId = null, string nameContains = null)
 		{
 			var results = context.Samples.Include(v => v.CreatedBy).Include(v => v.Status)
 				.AddOptionalQueryPart(() => id != null, p => p.Where(c => c.SampleId == id))
@@ -28,6 +28,10 @@ namespace FTDNA_Coding_Task.Controllers.Samples
 				.AddOptionalQueryPart(() => createdAt != null, p => p.Where(c => c.CreatedAt == createdAt))
 				.AddOptionalQueryPart(() => createdBy != null, p => p.Where(c => c.CreatedBy.UserId == createdBy))
 				.AddOptionalQueryPart(() => statusId != null, p => p.Where(c => c.Status.StatusId == statusId))
+				.AddOptionalQueryPart(() => nameContains != null, 
+					p => p.Where(
+						c => c.CreatedBy.FirstName.ToLowerInvariant().Contains(nameContains.ToLowerInvariant()) 
+					      || c.CreatedBy.LastName.ToLowerInvariant().Contains(nameContains.ToLowerInvariant()))) // this was last since it will not be serialised into sql
 				.Select(v => new SampleResponse()
 				{
 					Barcode = v.Barcode,

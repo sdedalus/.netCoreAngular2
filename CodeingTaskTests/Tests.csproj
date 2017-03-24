@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FTDNA_Coding_Task\FTDNA_Coding_Task.csproj" />
+    <ProjectReference Include="..\FTDNA_Coding_Task\FTDNA.csproj" />
   </ItemGroup>
 
   <ItemGroup>
